@@ -22,7 +22,7 @@ A Flutter plugin to handle unhandled exceptions.
 * Make sure you have added `errortracker` plugin in your application.
 * Import `errortracker` plugin in the `main.dart` file of your project.
   `import'package:errortracker/errortracker.dart';`
-* * Now, initialize errortracker plugin in `main()`
+* Now, initialize errortracker plugin in `main()`
 
 * ```
   void main() {
@@ -30,7 +30,7 @@ A Flutter plugin to handle unhandled exceptions.
       () => runApp(const MyApp()),
       url: 'https://example.com/error',
       onError: (error, stackTrace) {
-       // add yur code to handle unhandled exceptions 
+       // add your code here to handle unhandled exceptions 
       },
     );
   }
