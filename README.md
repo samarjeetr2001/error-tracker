@@ -49,7 +49,11 @@ A Flutter plugin to handle unhandled exceptions.
 * All the calculation is done in native via `methodchannel`.
 * divide by zero is unhandle exception in this use case which is catch by `errortracker` and snackbar is show to the user.
 * app screens -
-  ** ![ss1](https://user-images.githubusercontent.com/61595281/182706351-cd641911-fac6-4332-acd9-2818b6c44189.jpeg)
-  ** ![ss2](https://user-images.githubusercontent.com/61595281/182706363-98d04c8e-ff98-407d-84cf-a07c67828389.jpeg)
-  ** ![ss3](https://user-images.githubusercontent.com/61595281/182706371-12d2ffd2-c29b-4ece-a338-1e93ddbf861e.jpeg)
-  ** ![ss4](https://user-images.githubusercontent.com/61595281/182706377-d57436a3-758d-4ac4-8865-b543eeb18b92.jpeg)
+
+  ![ss1](https://user-images.githubusercontent.com/61595281/182706351-cd641911-fac6-4332-acd9-2818b6c44189.jpeg)
+   
+  ![ss2](https://user-images.githubusercontent.com/61595281/182706363-98d04c8e-ff98-407d-84cf-a07c67828389.jpeg)
+  
+  ![ss3](https://user-images.githubusercontent.com/61595281/182706371-12d2ffd2-c29b-4ece-a338-1e93ddbf861e.jpeg)
+  
+  ![ss4](https://user-images.githubusercontent.com/61595281/182706377-d57436a3-758d-4ac4-8865-b543eeb18b92.jpeg)
