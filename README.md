@@ -24,7 +24,7 @@ A Flutter plugin to handle unhandled exceptions.
   `import'package:errortracker/errortracker.dart';`
 * Now, initialize errortracker plugin in `main()`
 
-* ```
+```
   void main() {
     Errortracker.initialize(
       () => runApp(const MyApp()),
