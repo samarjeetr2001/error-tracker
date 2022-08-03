@@ -37,7 +37,7 @@ class Errortracker {
   }) async {
     // dummy api call to log the error
     await _client.post(
-      'https://reqres.in/api/users',
+      url,
       data: {
         'name': error.toString(),
         'job': stackTrace.toString(),

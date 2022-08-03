@@ -8,10 +8,10 @@ import 'calculator_view.dart';
 void main() {
   Errortracker.initialize(
     () => runApp(const MyApp()),
-    url: 'https://example.com/error',
+    url: 'https://reqres.in/api/users',
     onError: (error, stackTrace) {
       dynamic errorMessage = error;
-      Get.snackbar('Unhandeled Exception', '${errorMessage.message}' '',
+      Get.snackbar('Unhandled Exception', '${errorMessage.message}' '',
           backgroundColor: Colors.red,
           colorText: Colors.white,
           icon: const Icon(
