@@ -56,4 +56,4 @@ A Flutter plugin to handle unhandled exceptions.
   
   ![ss3](https://user-images.githubusercontent.com/61595281/182706371-12d2ffd2-c29b-4ece-a338-1e93ddbf861e.jpeg)
   
-  ![ss4](https://user-images.githubusercontent.com/61595281/182706377-d57436a3-758d-4ac4-8865-b543eeb18b92.jpeg)
+  ![image](https://user-images.githubusercontent.com/61595281/182710738-7836079c-0453-4deb-b9dd-e5503ceca7d2.png)
