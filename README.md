@@ -35,3 +35,8 @@ A Flutter plugin to handle unhandled exceptions.
     );
   }
   ```
+  
+ * here, `initialize()` of Errortracker class take three parameters1. callback: This is required paramter of type `void Function()`. Plugin will only catch unhandled exception passed to this parameter.
+   1. In above code, we have passed `runapp` to `callback` parameter. Hence, we are able to catch all unhandled exception.
+   2. url: This is also required parameter of type `String`. It the url where `errortracker` plugin will push post request when it catch unhandled exception.
+   3. onError: This is optional parameter of type `Function(Object, StackTrace)`. Definition of this function is define by the you. This will do execute operations when unhandled exception comes.
