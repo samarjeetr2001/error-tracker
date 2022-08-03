@@ -8,6 +8,7 @@ class Errortracker {
   static Errortracker? _instance;
   Errortracker._();
 
+  /// This will initialize the error tracker.
   static void initialize(void Function() callback,
       {required String url, Function(Object, StackTrace)? onError}) {
     if (_instance == null) {
