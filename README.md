@@ -47,7 +47,28 @@ A Flutter plugin to handle unhandled exceptions.
 
 * This is simple calculator which calculate single operation of single digit operands.
 * All the calculation is done in native via `methodchannel`.
-* divide by zero is unhandle exception in this use case which is catch by `errortracker` and snackbar is show to the user.
+* Divide by zero is unhandled exception in this use case which is catch by `errortracker` and snackbar is show to the user.
+* Error log -
+```
+[Errortracker] PlatformException (PlatformException(error, divide by zero, null, java.lang.ArithmeticException: divide by zero
+                 	at com.example.errortracker_example.MainActivity.calculate(MainActivity.kt:36)
+                 	at com.example.errortracker_example.MainActivity.configureFlutterEngine$lambda-0(MainActivity.kt:19)
+                 	at com.example.errortracker_example.MainActivity.$r8$lambda$YqKGSI5uh6AgA2fIZwDZZFk4Rus(Unknown Source:0)
+                 	at com.example.errortracker_example.MainActivity$$ExternalSyntheticLambda0.onMethodCall(Unknown Source:2)
+                 	at io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler.onMessage(MethodChannel.java:262)
+at io.flutter.embedding.engine.dart.DartMessenger.invokeHandler(DartMessenger.java:295)
+at io.flutter.embedding.engine.dart.DartMessenger.lambda$dispatchMessageToQueue$0$io-flutter-embedding-engine-dart-DartMessenger(DartMessenger.java:319)
+at io.flutter.embedding.engine.dart.DartMessenger$$ExternalSyntheticLambda0.run(Unknown Source:12)
+                 	at android.os.Handler.handleCallback(Handler.java:938)
+                 	at android.os.Handler.dispatchMessage(Handler.java:99)
+                 	at android.os.Looper.loop(Looper.java:233)
+                 	at android.app.ActivityThread.main(ActivityThread.java:8010)
+                 	at java.lang.reflect.Method.invoke(Native Method)
+                 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:631)
+                 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:978)
+                 ))
+
+```
 * app screens -
 
   ![ss1](https://user-images.githubusercontent.com/61595281/182706351-cd641911-fac6-4332-acd9-2818b6c44189.jpeg)
