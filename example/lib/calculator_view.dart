@@ -50,20 +50,36 @@ class _CalculatorState extends State<Calculator> {
             ),
           ),
           const Spacer(),
-          Wrap(
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               button(() => addData('1'), '1'),
               button(() => addData('2'), '2'),
               button(() => addData('3'), '3'),
               button(() => addData('*'), '*'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               button(() => addData('4'), '4'),
               button(() => addData('5'), '5'),
               button(() => addData('6'), '6'),
               button(() => addData('/'), '/'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               button(() => addData('7'), '7'),
               button(() => addData('8'), '8'),
               button(() => addData('9'), '9'),
               button(() => addData('-'), '-'),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
               button(() {
                 setState(() {
                   _num1 = null;
@@ -99,19 +115,20 @@ class _CalculatorState extends State<Calculator> {
     );
   }
 
-  Padding button(Function()? onTap, String text, {Color? color}) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: InkWell(
-        onTap: onTap,
-        child: Container(
-          width: 80,
-          height: 80,
-          decoration: boxDecoration(color: color),
-          child: Center(
-            child: Text(
-              text,
-              style: TextStyle(color: Colors.grey.shade800, fontSize: 20),
+  Widget button(Function()? onTap, String text, {Color? color}) {
+    return Expanded(
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: InkWell(
+          onTap: onTap,
+          child: Container(
+            height: 80,
+            decoration: boxDecoration(color: color),
+            child: Center(
+              child: Text(
+                text,
+                style: TextStyle(color: Colors.grey.shade800, fontSize: 20),
+              ),
             ),
           ),
         ),
